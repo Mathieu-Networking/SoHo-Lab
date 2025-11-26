@@ -7,7 +7,7 @@ This project simulates a secure, scalable network for a small-to-medium business
 
 ### 2. Network Topology
 ![Network Topology Diagram](Reservedfile . png
-*(Note: Replace this path with your actual screenshot file)*
+
 
 ### 3. Architecture & Addressing
 The network uses a **Hub-and-Spoke** topology with a Cisco 2911 Router handling all Layer 3 routing decisions. I utilized the **10.x.x.x** private address space to prevent VPN conflicts and allow for future scalability.
