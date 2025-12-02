@@ -6,8 +6,8 @@ This project simulates a secure, scalable network for a small-to-medium business
 **Key Technologies:** VLANs, Inter-VLAN Routing (ROAS), 802.1Q Trunking, DHCP, NAT/PAT, Extended ACLs.
 
 ### 2. Network Topology
-![Network Topology Diagram](images/topology_screenshot.png)
-*(Note: Replace this path with your actual screenshot file)*
+
+<img width="1260" height="878" alt="topology_screenshot" src="https://github.com/user-attachments/assets/5e86a846-d4e7-4954-8e6b-ccfcbcc4a60d" />
 
 ### 3. Architecture & Addressing
 The network uses a **Hub-and-Spoke** topology with a Cisco 2911 Router handling all Layer 3 routing decisions. I expanded the Layer 2 footprint by daisy-chaining a second switch (S2) to Switch 1 (S1) via an 802.1Q Trunk, allowing VLANs to span multiple physical devices.
@@ -34,7 +34,7 @@ interface GigabitEthernet0/2
 interface GigabitEthernet0/1
  switchport mode trunk
 ```
-###B. Secure Segmentation (VLANs & ROAS)
+### B. Secure Segmentation (VLANs & ROAS)
 I configured Router-on-a-Stick on the main router to handle traffic for all 4 VLANs.
 
 ```Cisco CLI
@@ -82,4 +82,8 @@ access-list 100 permit ip any any
 6. Verification Proof
 Evidence of NAT working:
 
+<img width="562" height="110" alt="nat trans" src="https://github.com/user-attachments/assets/fa4cb1e6-2cfb-4ab5-ac32-86e49990440c" />
+
 Evidence of ACL blocking Sales->HR:  
+
+<img width="509" height="186" alt="unreach" src="https://github.com/user-attachments/assets/e3d2dd8f-7fa0-4872-9d81-438357e37370" />
