@@ -1,7 +1,7 @@
 # Enterprise SOHO Network Implementation (Cisco Packet Tracer)
 
 ### 1. Project Overview
-This project simulates a secure, scalable network for a small-to-medium business consisting of four distinct departments (HR, Legal, Sales, IT). The goal was to provide segmentation between departments for security while allowing all users to access the internet via a simulated ISP. The architecture features a multi-switch topology to demonstrate Layer 2 trunking and scalability.
+This project simulates a secure, scalable network for a small-to-medium business consisting of four distinct departments (HR, Legal, Sales, Accounting). The goal was to provide segmentation between departments for security while allowing all users to access the internet via a simulated ISP. The architecture features a multi-switch topology to demonstrate Layer 2 trunking and scalability.
 
 **Key Technologies:** VLANs, Inter-VLAN Routing (ROAS), 802.1Q Trunking, DHCP, NAT/PAT, Extended ACLs.
 
@@ -19,7 +19,7 @@ The network uses a **Hub-and-Spoke** topology with a Cisco 2911 Router handling 
 | **10** | HR | 10.0.10.0/24 | 10.0.10.1 | .21 | Switch 1 |
 | **20** | Legal | 10.0.20.0/24 | 10.0.20.1 | .21 | Switch 1 |
 | **30** | Sales | 10.0.30.0/24 | 10.0.30.1 | .21 | Switch 1 |
-| **40** | IT/Ops | 10.0.40.0/24 | 10.0.40.1 | .21 | Switch 2 |
+| **40** | Accounting | 10.0.40.0/24 | 10.0.40.1 | .21 | Switch 2 |
 | **WAN** | ISP Link | 203.0.113.0/30 | 203.0.113.2 | N/A | Router 1 |
 
 ### 4. Key Configurations
